@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privagram</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
+ body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             background-color: #fafafa;
@@ -57,7 +49,7 @@
         }
 
         main {
-            display: flex;
+            display: block;
             justify-content: center;
             margin: 20px auto;
             max-width: 900px;
@@ -84,7 +76,7 @@
         .post-header img {
             width: 40px;
             height: 40px;
-            border-radius: 20%;
+            border-radius: 50%;
             margin-right: 10px;
         }
 
@@ -150,7 +142,7 @@
 
         .profile {
             max-width: 900px;
-            margin: 20px auto;
+            margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -165,15 +157,12 @@
             border: 1px solid #dbdbdb;
             border-radius: 5px;
             margin-bottom: 20px;
-            justify-content: center;
-
         }
-
 
         .profile-header img {
             width: 100px;
             height: 100px;
-            border-radius: 10%;
+            border-radius: 15%;
             margin-right: 20px;
         }
 
@@ -209,42 +198,92 @@
             height: auto;
             border-radius: 5px;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">Privyo</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="actions">
-            <a href="messages.html">Messages</a>
-        </div>
-    </header>
 
-    <main>
-        <div class="profile">
-            <div class="profile-header">
-                <img src="q.webp" alt="Profile Picture">
-                <div class="details">
-                    <div class="username">your_username</div>
-                    <div class="stats">
-                        <div><strong>150</strong> post</div>
-                        <div><strong>200</strong> Friends</div>
-                    </div>
-                </div>
-            </div>
+        .messages {
+            max-width: 900px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-            <div class="profile-posts">
-                <img src="q.webp" alt="Post 1">
-                <img src="q.webp" alt="Post 1">
-                <img src="q.webp" alt="Post 1">
-                <img src="q.webp" alt="Post 1">
-                <img src="q.webp" alt="Post 1">
-                <img src="q.webp" alt="Post 1">
+        .message-header {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
 
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+        .message-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .message-header .details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message-header .details .username {
+            font-weight: 500;
+        }
+
+        .message-body {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            display: flex;
+            gap: 10px;
+        }
+
+        .message .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .message .text {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .message-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background: #fff;
+            margin-top: 10px;
+        }
+
+        .message-input input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .message-input button {
+            background: #3897f0;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
